@@ -1,0 +1,12 @@
+webhook:
+  url: "http://example.com/api/receive"
+  method: "POST"
+  headers:
+    Content-Type: "application/json"
+  body: |
+    {
+      "event": "{{ Event }}",
+      "user": "{{ User.Name }}",
+      "description": "{{ Description }}",
+      "server_version": "{{ Server.Version }}"
+    }
