@@ -10,3 +10,13 @@ webhook:
       "description": "{{ Description }}",
       "server_version": "{{ Server.Version }}"
     }
+webhook2:
+  url: "http://example.com/api/another"
+  method: "POST"
+  headers:
+    Content-Type: "application/json"
+  body: |
+    {
+      "user": "{{ User.Name }}",
+      "summary": "{{ Description }}"
+    }
